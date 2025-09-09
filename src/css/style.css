@@ -5,6 +5,7 @@ nav {
   align-items: center;
   background-color: #b9f8f0;
   font-family: Arial, sans-serif;
+  font-size: 22px;
 }
 
 nav ul {
@@ -35,10 +36,10 @@ nav a:hover {
 }
 
 nav ul li a img {
-  height: 50px;
+  height: 100px;
   width: auto;
   vertical-align: middle;
-  margin-right: 20px;
+  margin-right: 30px;
   border: none;
 }
 
