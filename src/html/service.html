@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Serviços</title>
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -12,15 +12,96 @@
     <header>
         <div id="navbar-placeholder"></div>
         <div class="page-header">
-            <h1>Serviços</h1>
+            <h2>Serviços</h2>
             <p>Nossa Unidade de Saúde está comprometida em oferecer atendimento humanizado e de qualidade para a comunidade. Contamos com uma equipe multidisciplinar dedicada a promover a saúde e o bem-estar de nossos pacientes.</p>
         </div>
         
     </header>
-    <main>
-      
 
+    <main>
+        <section class="services-detailed">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card detailed">
+                        <div class="service-icon">🩺</div>
+                        <h3>Consultas Médicas</h3>
+                        <p>Atendimento médico geral com profissionais qualificados. Realizamos consultas de rotina, diagnósticos e acompanhamento de tratamentos.</p>
+                        <ul>
+                            <li>Clínica Geral</li>
+                            <li>Pediatria</li>
+                            <li>Ginecologia</li>
+                            <li>Cardiologia</li>
+                        </ul>
+                        <a href="/src/html/agendamento.html" class="service-button">Agendar Consulta</a>
+                    </div>
+
+                    <div class="service-card detailed">
+                        <div class="service-icon">💉</div>
+                        <h3>Vacinação</h3>
+                        <p>Campanhas de vacinação e imunização para todas as idades. Mantemos o calendário vacinal atualizado conforme orientações do Ministério da Saúde.</p>
+                        <ul>
+                            <li>Vacinas infantis</li>
+                            <li>Vacinas para adultos</li>
+                            <li>Vacinas para idosos</li>
+                            <li>Campanhas especiais</li>
+                        </ul>
+                        <a href="/src/html/agendamento.html" class="service-button">Agendar Vacinação</a>
+                    </div>
+
+                    <div class="service-card detailed">
+                        <div class="service-icon">🔬</div>
+                        <h3>Exames Laboratoriais</h3>
+                        <p>Exames de sangue, urina e outros exames diagnósticos. Contamos com laboratório próprio para agilizar os resultados.</p>
+                        <ul>
+                            <li>Hemograma completo</li>
+                            <li>Exames de urina</li>
+                            <li>Glicemia</li>
+                            <li>Colesterol</li>
+                        </ul>
+                        <a href="/src/html/agendamento.html" class="service-button">Agendar Exame</a>
+                    </div>
+
+                    <div class="service-card detailed">
+                        <div class="service-icon">💊</div>
+                        <h3>Farmácia</h3>
+                        <p>Dispensação de medicamentos básicos e orientação farmacêutica. Disponibilizamos medicamentos essenciais para a comunidade.</p>
+                        <ul>
+                            <li>Medicamentos básicos</li>
+                            <li>Orientação farmacêutica</li>
+                            <li>Controle de medicamentos</li>
+                            <li>Programa de medicamentos</li>
+                        </ul>
+                        <a href="/src/html/contato.html" class="service-button">Mais Informações</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="service-hours">
+            <div class="container">
+                <h3>Horários de Atendimento</h3>
+                <div class="hours-grid">
+                    <div class="hours-card">
+                        <h4>Consultas Médicas</h4>
+                        <p>Segunda a Sexta: 7h às 17h</p>
+                        <p>Sábado: Fechado</p>
+                    </div>
+                    <div class="hours-card">
+                        <h4>Vacinação</h4>
+                        <p>Segunda a Sexta: 8h às 16h</p>
+                        <p>Sábado: Fechado</p>
+                    </div>
+                    <div class="hours-card">
+                        <h4>Exames</h4>
+                        <p>Segunda a Sexta: 7h às 10h</p>
+                        <p>Jejum necessário</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <div id="footer-placeholder"></div>
     <script src="/include_navbar.js"></script>
     <script src="/include_footer.js"></script>

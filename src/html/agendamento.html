@@ -14,7 +14,7 @@
     <header>
         <div id="navbar-placeholder"></div>
         <div class="page-header">
-            <h1>Agendamento</h1>
+            <h2>Agendamento</h2>
             <p>Nossa Unidade de Saúde está comprometida em oferecer atendimento humanizado e de qualidade para a
                 comunidade. Contamos com uma equipe multidisciplinar dedicada a promover a saúde e o bem-estar de nossos
                 pacientes.</p>
@@ -41,7 +41,7 @@
                         <h3>Horários Disponíveis</h3>
                         <ul>
                             <li>Segunda a Sexta: 7h às 17h</li>
-                            <li>Sábado: 7h às 12h</li>
+                            <li>Sábado: Fechado</li>
                             <li>Consultas a cada 30 minutos</li>
                             <li>Chegue 15 min antes</li>
                         </ul>
@@ -51,10 +51,10 @@
                         <div class="info-icon">📞</div>
                         <h3>Outras Formas de Agendar</h3>
                         <ul>
-                            <li>Telefone: (XX) XXXX-XXXX</li>
+                            <li>Telefone: (XX) 1234-5678</li>
                             <li>Presencialmente na recepção</li>
-                            <li>WhatsApp: (XX) XXXXX-XXXX</li>
-                            <li>Horário: 7h às 17h</li>
+                            <li>WhatsApp: (XX) 1234-5678</li>
+                            <li>Horário: 8h às 16h</li>
                         </ul>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="appointment-name">Nome Completo </label>
-                                <input type="text" id="appointment-name" name="appointment-name" required>
+                                <input type="text" id="appointment-name" name="appointment-name" required placeholder="Digite o Seu Nome Completo">
                             </div>
 
                             <div class="form-group">
@@ -84,7 +84,7 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="appointment-email">Email </label>
-                                <input type="email" id="appointment-email" name="appointment-email" required>
+                                <input type="email" id="appointment-email" name="appointment-email" required placeholder="email@exemplo.com">
                             </div>
 
                             <div class="form-group">
@@ -128,7 +128,6 @@
                                     <option value="cardiologia">Cardiologia</option>
                                     <option value="vacinacao">Vacinação</option>
                                     <option value="exames">Exames Laboratoriais</option>
-                                    <option value="odontologia">Atendimento Odontológico</option>
                                 </select>
                             </div>
 
@@ -154,8 +153,6 @@
                                 <label for="appointment-time">Horário Preferencial </label>
                                 <select id="appointment-time" name="appointment-time" required>
                                     <option value="">Selecione um horário</option>
-                                    <option value="07:00">07:00</option>
-                                    <option value="07:30">07:30</option>
                                     <option value="08:00">08:00</option>
                                     <option value="08:30">08:30</option>
                                     <option value="09:00">09:00</option>
@@ -208,9 +205,9 @@
             </div>
         </section>
 
-        <section class="agendamento-tipos"> <!-- mudei aqui para português - appointment-types -->
+        <section class="appointment-tips"> <!-- mudei aqui para português - appointment-types -->
             <div class="container">
-                <h2 style="margin-left: 80px;">Dicas Importantes:</h3>
+                <h3>Dicas Importantes:</h3>
                 <div class="tips-grid">
                     <div class="tip-card">
                         <h4>📅 Antecedência</h4>
