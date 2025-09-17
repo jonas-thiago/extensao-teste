@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #b9f8f0;
+  background: linear-gradient(135deg, #0cb8fc 0%, #05f5fd 100%);
   font-family: Arial, sans-serif;
   font-size: 22px;
 }
