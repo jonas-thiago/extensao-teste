@@ -1,16 +1,13 @@
-// Função para carregar o conteúdo do arquivo navbar.html
-async function loadNavbar() {
-  try {
-    const response = await fetch('/navbar.html');
+// O 'pathToRoot' será definido em cada página HTML
+fetch(pathToRoot + 'navbar.html')
+  .then(response => {
     if (!response.ok) {
-      throw new Error(`Erro ao carregar a barra de navegação: ${response.statusText}`);
+      throw new Error('Erro ao carregar o navbar. Verifique o caminho.');
     }
-    const htmlContent = await response.text();
-    document.getElementById('navbar-placeholder').innerHTML = htmlContent;
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-// Chama a função quando a página é carregada
-document.addEventListener('DOMContentLoaded', loadNavbar);
+    return response.text();
+  })
+  .then(data => {
+    // Certifique-se de que você tem um <div id="navbar-placeholder"></div> no seu HTML
+    document.querySelector('#navbar-placeholder').innerHTML = data;
+  })
+  .catch(error => console.error('Erro no include_navbar.js:', error));

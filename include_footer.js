@@ -1,15 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Para os arquivos em src/html/, o "../" faz a função de "voltar" para a pasta src/
-    // O fetch() vai procurar o arquivo em src/footer.html
-    fetch('/footer.html')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Erro na requisição: ' + response.statusText);
-        }
-        return response.text();
-      })
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('Erro ao carregar o rodapé:', error));
-  });
+// O 'pathToRoot' será definido em cada página HTML
+fetch(pathToRoot + 'footer.html')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Erro ao carregar o footer. Verifique o caminho.');
+    }
+    return response.text();
+  })
+  .then(data => {
+    // Certifique-se de que você tem um <div id="footer-placeholder"></div> no seu HTML
+    document.querySelector('#footer-placeholder').innerHTML = data;
+  })
+  .catch(error => console.error('Erro no include_footer.js:', error));
