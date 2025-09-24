@@ -1,5 +1,5 @@
 // O 'pathToRoot' será definido em cada página HTML
-fetch(pathToRoot + 'navbar.html')
+fetch(pathToRoot + '/navbar.html')
   .then(response => {
     if (!response.ok) {
       throw new Error('Erro ao carregar o navbar. Verifique o caminho.');

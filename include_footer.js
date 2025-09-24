@@ -1,5 +1,5 @@
 // O 'pathToRoot' será definido em cada página HTML
-fetch(pathToRoot + 'footer.html')
+fetch(pathToRoot + '/footer.html')
   .then(response => {
     if (!response.ok) {
       throw new Error('Erro ao carregar o footer. Verifique o caminho.');
