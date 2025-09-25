@@ -880,3 +880,143 @@ footer {
   color: #666;
   line-height: 1.6;
 }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .about-preview .container,
+    .about-content .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .page-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .services-preview h3,
+    .team-section h3,
+    .service-hours h3 {
+        font-size: 2rem;
+    }
+    
+    .contact-form,
+    .appointment-form {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .page-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .services-preview h3,
+    .team-section h3,
+    .service-hours h3 {
+        font-size: 1.6rem;
+    }
+    
+    .stat h4 {
+        font-size: 2rem;
+    }
+    
+    .contact-form,
+    .appointment-form {
+        padding: 20px;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-card,
+.contact-card,
+.info-card,
+.tip-card,
+.faq-item {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #4caf50;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    header,
+    footer,
+    .cta-button,
+    .service-button,
+    .submit-button {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+}
