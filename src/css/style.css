@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #0cb8fc 0%, #05f5fd 100%);
+  background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
   font-family: Arial, sans-serif;
   font-size: 22px;
 }
@@ -11,7 +11,7 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
-  gap: 30px; /* espaçamento uniforme entre itens */
+  gap: 30px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -46,9 +46,7 @@ nav ul li a img {
 /* Estilos globais */
 
 body {
-  /* Garante que o pseudo-elemento seja posicionado corretamente em relação ao body */
   position: relative;
-  /* Definir um background-color no body para o caso da imagem não carregar ou para ter um fallback */
 }
 
 body::before {
@@ -184,7 +182,7 @@ footer {
 
 .cta-button {
   display: inline-block;
-  background: linear-gradient(135deg, #fc0404 0%, #f1a808 100%);
+  background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
   color: white;
   padding: 15px 30px;
   text-decoration: none;
@@ -308,9 +306,9 @@ footer {
 
 /* Page Header */
 .page-header {
-  background: linear-gradient(135deg, #eb1818 0%, #085edf 100%);
+  background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
   color: white;
-  padding: 30px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -645,7 +643,7 @@ footer {
 }
 
 .submit-button {
-  background: linear-gradient(135deg, #fc0404 0%, #f1a808 100%);
+  background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
   color: white;
   padding: 15px 40px;
   border: none;
@@ -682,7 +680,6 @@ footer {
   width: auto;
   margin: 0;
 }
-
 
 /* Map Section */
 .map-section {
@@ -810,7 +807,7 @@ footer {
 
 .form-container {
   max-width: 900px;
-  margin:  auto;
+  margin: auto;
 }
 
 .form-container h3 {
@@ -881,100 +878,99 @@ footer {
   line-height: 1.6;
 }
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        padding: 0 15px;
-    }
-    
-    header .container {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-    
-    .hero .container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-    
-    .hero-content h2 {
-        font-size: 2.2rem;
-    }
-    
-    .about-preview .container,
-    .about-content .container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-    
-    .page-header h2 {
-        font-size: 2.2rem;
-    }
-    
-    .services-preview h3,
-    .team-section h3,
-    .service-hours h3 {
-        font-size: 2rem;
-    }
-    
-    .contact-form,
-    .appointment-form {
-        padding: 25px;
-    }
+  .container {
+    padding: 0 15px;
+  }
+
+  header .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-preview .container,
+  .about-content .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .page-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .services-preview h3,
+  .team-section h3,
+  .service-hours h3 {
+    font-size: 2rem;
+  }
+
+  .contact-form,
+  .appointment-form {
+    padding: 25px;
+  }
 }
 
 @media (max-width: 480px) {
-    .hero-content h2 {
-        font-size: 1.8rem;
-    }
-    
-    .page-header h2 {
-        font-size: 1.8rem;
-    }
-    
-    .services-preview h3,
-    .team-section h3,
-    .service-hours h3 {
-        font-size: 1.6rem;
-    }
-    
-    .stat h4 {
-        font-size: 2rem;
-    }
-    
-    .contact-form,
-    .appointment-form {
-        padding: 20px;
-    }
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .page-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-preview h3,
+  .team-section h3,
+  .service-hours h3 {
+    font-size: 1.6rem;
+  }
+
+  .stat h4 {
+    font-size: 2rem;
+  }
+
+  .contact-form,
+  .appointment-form {
+    padding: 20px;
+  }
 }
 
 /* Animations */
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .service-card,
@@ -982,12 +978,12 @@ footer {
 .info-card,
 .tip-card,
 .faq-item {
-    animation: fadeInUp 0.6s ease-out;
+  animation: fadeInUp 0.6s ease-out;
 }
 
 /* Smooth scrolling */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Focus styles for accessibility */
@@ -996,27 +992,27 @@ button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 2px solid #4caf50;
-    outline-offset: 2px;
+  outline: 2px solid #4caf50;
+  outline-offset: 2px;
 }
 
 /* Print styles */
 @media print {
-    header,
-    footer,
-    .cta-button,
-    .service-button,
-    .submit-button {
-        display: none;
-    }
-    
-    body {
-        background: white;
-        color: black;
-    }
-    
-    .container {
-        max-width: none;
-        padding: 0;
-    }
+  header,
+  footer,
+  .cta-button,
+  .service-button,
+  .submit-button {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .container {
+    max-width: none;
+    padding: 0;
+  }
 }
