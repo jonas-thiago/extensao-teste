@@ -120,41 +120,27 @@
                     id="phone"
                     name="phone"
                     required
-                    placeholder="00 00000-0000"
-                    pattern="\(\d{3}\) \d{3}-\d{4}"
+                    placeholder="11 90000-0000"
+                    pattern="(\d{2})\ (\d{4,5})-(\d{4})"
                     maxlength="13"
                     oninput="mascaraTel(this)"
                   />
                 </div>
                 <div class="form-group">
                   <label for="sus">Cartão Sus </label>
-                  <input
-                    type="text"
-                    id="sus"
-                    name="sus"
-                    required
-                  />
+                  <input type="text" id="sus" name="sus" required />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
                   <label for="birth">Data de Nascimento </label>
-                  <input
-                    type="date"
-                    id="birth"
-                    name="birth"
-                    required
-                  />
+                  <input type="date" id="birth" name="birth" required />
                 </div>
 
                 <div class="form-group">
                   <label for="gender">Sexo </label>
-                  <select
-                    id="gender"
-                    name="gender"
-                    required
-                  >
+                  <select id="gender" name="gender" required>
                     <option value="">Selecione</option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
@@ -177,11 +163,7 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="service">Serviço Desejado </label>
-                  <select
-                    id="service"
-                    name="service"
-                    required
-                  >
+                  <select id="service" name="service" required>
                     <option value="">Selecione um serviço</option>
                     <option value="consulta-geral">
                       Consulta Médica Geral
@@ -209,21 +191,12 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="date">Data Preferencial </label>
-                  <input
-                    type="date"
-                    id="date"
-                    name="date"
-                    required
-                  />
+                  <input type="date" id="date" name="date" required />
                 </div>
 
                 <div class="form-group">
                   <label for="time">Horário Preferencial </label>
-                  <select
-                    id="time"
-                    name="time"
-                    required
-                  >
+                  <select id="time" name="time" required>
                     <option value="">Selecione um horário</option>
                     <option value="08:00">08:00</option>
                     <option value="08:30">08:30</option>
@@ -246,9 +219,7 @@
               </div>
 
               <div class="form-group">
-                <label for="symptoms"
-                  >Sintomas ou Motivo da Consulta</label
-                >
+                <label for="symptoms">Sintomas ou Motivo da Consulta</label>
                 <textarea
                   id="symptoms"
                   name="symptoms"
