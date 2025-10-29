@@ -36,11 +36,12 @@ nav a:hover {
 }
 
 nav ul li a img {
-  height: 100px;
-  width: auto;
+  height: 40px;
+  width: 40px;
   vertical-align: middle;
   margin-right: 30px;
   border: none;
+  border-radius: 8px;
 }
 
 /* Estilos globais */

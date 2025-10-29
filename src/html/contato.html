@@ -1,138 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
     <header>
-        <div id="navbar-placeholder"></div>        
+      <div id="navbar-placeholder"></div>
     </header>
     <main>
-        <section class="page-header">
-            <div class="container">
-                <h2>Entre em Contato</h2>
-                <p>Nossa Unidade de Saúde está comprometida em oferecer atendimento humanizado e de qualidade para a comunidade. Contamos com uma equipe multidisciplinar dedicada a promover a saúde e o bem-estar de nossos pacientes.</p>
+      <section class="page-header">
+        <div class="container">
+          <h2>Entre em Contato</h2>
+          <p>
+            Nossa Unidade de Saúde está comprometida em oferecer atendimento
+            humanizado e de qualidade para a comunidade. Contamos com uma equipe
+            multidisciplinar dedicada a promover a saúde e o bem-estar de nossos
+            pacientes.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-content">
+        <div class="container">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <h3>Telefone</h3>
+              <p>(XX) 1234-5678</p>
+              <p>Segunda a Sexta: 8h às 17h</p>
+              <p>Sábado: Fechado</p>
             </div>
-        </section>
 
-        <section class="contact-content">
-            <div class="container">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <div class="contact-icon">📞</div>
-                        <h3>Telefone</h3>
-                        <p>(XX) 1234-5678</p>
-                        <p>Segunda a Sexta: 8h às 17h</p>
-                        <p>Sábado: Fechado</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">📧</div>
-                        <h3>Email</h3>
-                        <p>contato@postodesaude.com</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">📍</div>
-                        <h3>Endereço</h3>
-                        <p>Rua Exemplo, 123 - Centro</p>
-                        <p>Cidade - Estado</p>
-                        <p>CEP: 00000-000</p>
-                    </div>
-                </div>
-
-                <div class="contact-form-section">
-                    <h3>Envie sua Mensagem</h3>
-                    <p>Para dúvidas, sugestões ou informações, preencha o formulário abaixo:</p>
-                    
-                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/xanprgnv" method="POST">
-                        <div class="form-group">
-                            <label for="name">Nome Completo</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Telefone</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Assunto</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Selecione um assunto</option>
-                                <option value="informacoes">Informações Gerais</option>
-                                <option value="agendamento">Agendamento</option>
-                                <option value="reclamacao">Reclamação</option>
-                                <option value="sugestao">Sugestão</option>
-                                <option value="elogio">Elogio</option>
-                                <option value="outros">Outros</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-button">Enviar Mensagem</button>
-                    </form>
-                </div>
+            <div class="contact-card">
+              <div class="contact-icon">📧</div>
+              <h3>Email</h3>
+              <p>contato@postodesaude.com</p>
             </div>
-        </section>
 
-        <section class="map-section">
-            <div class="container">
-                <h3>Nossa Localização</h3>
-                <div class="map-placeholder">
-                    <p>🗺️ Mapa da localização do Posto de Saúde</p>
-                    <p>Rua Exemplo, 123 - Centro, Cidade - UF</p>
-                    <p><em>Próximo ao mercado central e à praça principal</em></p>
-                </div>
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <h3>Endereço</h3>
+              <p>Rua Exemplo, 123 - Centro</p>
+              <p>Cidade - Estado</p>
+              <p>CEP: 00000-000</p>
             </div>
-        </section>
+          </div>
 
-        <section class="faq-section">
-            <div class="container">
-                <h3>Perguntas Frequentes</h3>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h4>Como agendar uma consulta?</h4>
-                        <p>Você pode agendar através do nosso formulário online, por telefone ou presencialmente na recepção.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Preciso levar documentos?</h4>
-                        <p>Sim, traga RG, CPF, cartão do SUS e comprovante de residência.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Qual o horário de funcionamento?</h4>
-                        <p>Segunda a sexta das 8h às 17h, Sábado Fechado.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Atendem convênios?</h4>
-                        <p>Atendemos pelo SUS e alguns convênios específicos. Consulte na recepção.</p>
-                    </div>
-                </div>
+          <div class="contact-form-section">
+            <h3>Envie sua Mensagem</h3>
+            <p>
+              Para dúvidas, sugestões ou informações, preencha o formulário
+              abaixo:
+            </p>
+
+            <form
+              id="contact-form"
+              class="contact-form"
+              action="https://formspree.io/f/xanprgnv"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Digite o Seu Nome Completo"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="email@exemplo.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="11 90000-0000"
+                  pattern="(\d{2})\ (\d{4,5})-(\d{4})"
+                  maxlength="13"
+                  oninput="mascaraTel(this)"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Assunto</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Selecione um assunto</option>
+                  <option value="informacoes">Informações Gerais</option>
+                  <option value="agendamento">Agendamento</option>
+                  <option value="reclamacao">Reclamação</option>
+                  <option value="sugestao">Sugestão</option>
+                  <option value="elogio">Elogio</option>
+                  <option value="outros">Outros</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Digite sua mensagem aqui..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-button">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <div class="container">
+          <h3>Nossa Localização</h3>
+          <div class="map-placeholder">
+            <p>🗺️ Mapa da localização do Posto de Saúde</p>
+            <p>Rua Exemplo, 123 - Centro, Cidade - UF</p>
+            <p><em>Próximo ao mercado central e à praça principal</em></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h3>Perguntas Frequentes</h3>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h4>Como agendar uma consulta?</h4>
+              <p>
+                Você pode agendar através do nosso formulário online, por
+                telefone ou presencialmente na recepção.
+              </p>
             </div>
-        </section>
+            <div class="faq-item">
+              <h4>Preciso levar documentos?</h4>
+              <p>
+                Sim, traga RG, CPF, cartão do SUS e comprovante de residência.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h4>Qual o horário de funcionamento?</h4>
+              <p>Segunda a sexta das 8h às 17h, Sábado Fechado.</p>
+            </div>
+            <div class="faq-item">
+              <h4>Atendem convênios?</h4>
+              <p>
+                Atendemos pelo SUS e alguns convênios específicos. Consulte na
+                recepção.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div id="footer-placeholder"></div>
 
     <script>
-        const pathToRoot = '../../';
+      const pathToRoot = "../../";
     </script>
     <script src="../../include_navbar.js"></script>
     <script src="../../include_footer.js"></script>
-</body>
-
+    <script src="../js/form.js"></script>
+  </body>
 </html>
